@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Milonga&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@300&family=Protest+Revolution&display=swap');
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    /*background: rgba(241, 142, 142, 0.589);*/
+    background-image : url(images/bg.jpg);
+    background-size: cover;
+
+    
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1500px;
+    min-width: 320px;
+
+}
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.input-reset {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+}
+.input-reset::-webkit-search-decoration,
+.input-reset::-webkit-search-cancel-button,
+.input-reset::-webkit-search-results-button,
+.input-reset::-webkit-search-results-decoration {
+    display: none;
+}
+.todo {
+    margin: 10vh auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #575f5f44;
+    border-radius: 10px;
+}
+
+.title {
+    text-shadow: rgb(88, 89, 80) 5px 0 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: brown;
+    font-family: "Milonga", serif;
+    font-weight: 400;
+    font-weight:bold;
+    border: none;
+    border-radius: 6px;
+    
+}
+.title:hover{
+    color: #404040 !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: none;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.3s ease 0s;
+}
+
+.title img {
+    margin-left: 15px;
+    max-width: 40px;
+}
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.input {
+    flex: 1;
+    padding: 10px 15px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 10px 0 0 10px;
+}
+.input:focus {
+    outline: none;
+}
+.add {
+    width: 25%;
+    color: #fff;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(78, 73, 74) 100%);;
+    border: 1px solid transparent;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+}
+.add:hover {
+    background-color: rgba(175, 178, 184, 0.8);
+}
+.item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.item.checked {
+    text-decoration: line-through;
+    color: #cecece;
+}
+.item.checked .check {
+    background-color: #fff;
+    border: 2px solid rgba(65, 81, 103, 0.4);
+}
+.item.checked .check::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 8px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://svgsilh.com/svg/146095.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(5deg);
+}
+.check {
+    position: relative;
+    display: inline-block;
+    order: -1;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: #cecece;
+    border-radius: 50%;
+    border: 2px solid #415167;
+    transition: all 0.3s ease;
+}
+.done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    background: url("https://ikonki.svgpng.ru/wp-content/uploads/2021/12/Krestiksvgpng.ru_.png") no-repeat;
+    background-size: 80%;
+    background-position: top 3px left 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.done:hover {
+    background-color: #cecece;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
